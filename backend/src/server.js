@@ -13,8 +13,18 @@ const io = socketIo(server, {
   cors: { origin: "*", methods: ["GET", "POST", "PUT", "DELETE"] }
 });
 
-app.use(cors());
+app.use(cors({ origin: ["https://dev.d3jj8msf19yerq.amplifyapp.com", "http://localhost:5173"], credentials: true }));
 app.use(express.json());
+
+// Health check endpoint
+app.get("/", (req, res) => {
+  res.json({ 
+    status: "running", 
+    message: "CamRide Super App Backend API",
+    version: "1.0.0",
+    timestamp: new Date().toISOString()
+  });
+});
 
 const JWT_SECRET = process.env.JWT_SECRET || 'camride-super-secret-2025';
 const PORT = process.env.PORT || 3001;

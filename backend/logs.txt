@@ -1,0 +1,4 @@
+Retrieving logs...
+Logs were saved to /Users/ngoubimaximilliandiamgha/Desktop/CamRide Super App /backend/.elasticbeanstalk/logs/251015_085932
+Logs were saved to /Users/ngoubimaximilliandiamgha/Desktop/CamRide Super App /backend/.elasticbeanstalk/logs/251015_085932
+Updated symlink at /Users/ngoubimaximilliandiamgha/Desktop/CamRide Super App /backend/.elasticbeanstalk/logs/latest
